@@ -21,6 +21,9 @@ sudo openssl req -new -x509 -days 365 -key ca.key -out ca.crt -subj "/C=CN/CN=na
 sudo openssl genrsa -out server.key 2048
 
 # genarate signed file for request
+sudo openssl req -new -key server.key -out server.csr -subj "/C=CN/CN=192.168.33.10"
+
+# genarate certificate
 # "subjectAltName"  param of values "IP:ip addres,DNS:your direacry name", this can choose one of them
 # now my vm ip is "192.168.33.10"
 # param "x509" is version 3 of new ,this to do can alow many machine to use.
