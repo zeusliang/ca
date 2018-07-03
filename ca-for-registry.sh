@@ -6,7 +6,7 @@
 # step1, generate a root certificate let self as CA
 
 # generate private key of CA
-sudo penssl genrsa -out ca.key 2048
+sudo openssl genrsa -out ca.key 2048
 
 # genearate certificate "ca.crt"
 # "CN=name" mean to owner and user is same
