@@ -1,4 +1,4 @@
-#!/usr/nin/bash
+#!/usr/bin/bash
 # create private registry for your docker hub
 
 
